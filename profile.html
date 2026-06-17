@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Profile — Findr</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">
+      <svg width="30" height="30" viewBox="0 0 30 30" fill="none">
+        <rect x="4" y="7" width="18" height="18" rx="4" transform="rotate(-8 4 7)" fill="#1B2A4A"/>
+        <circle cx="10.5" cy="11" r="2.4" fill="#F6F3EC"/>
+        <path d="M12 16l3 3 5-6" stroke="#E8A33D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span class="brand-name">Find<span>r</span></span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1B2A4A" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="features.html">Features</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li class="nav-dropdown">
+        <button class="nav-dropdown-btn">System Mockups
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="nav-dropdown-menu">
+          <a href="login.html"><span class="tag-dot"></span>Login Page</a>
+          <a href="register.html"><span class="tag-dot"></span>Registration Form</a>
+          <a href="dashboard.html"><span class="tag-dot"></span>Dashboard</a>
+          <a href="records.html"><span class="tag-dot"></span>Records Management</a>
+          <a href="reports.html"><span class="tag-dot"></span>Reports Page</a>
+          <a href="profile.html" style="background:var(--parchment);"><span class="tag-dot"></span>Profile Page</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="app-shell">
+  <aside class="app-sidebar">
+    <div class="sidebar-label">Menu</div>
+    <a href="dashboard.html">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="7" height="9" rx="1.5"/><rect x="14" y="3" width="7" height="5" rx="1.5"/><rect x="14" y="12" width="7" height="9" rx="1.5"/><rect x="3" y="16" width="7" height="5" rx="1.5"/></svg>
+      Dashboard
+    </a>
+    <a href="records.html">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      Records management
+    </a>
+    <a href="reports.html">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M3 3v18h18"/><path d="M7 14l3-3 3 3 5-5"/></svg>
+      Reports
+    </a>
+    <a href="profile.html" class="active">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>
+      My profile
+    </a>
+    <div class="sidebar-label">Account</div>
+    <a href="login.html">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+      Log out
+    </a>
+  </aside>
+
+  <main class="app-main">
+    <div class="app-topline">
+      <div>
+        <h1>My profile</h1>
+        <p class="sub">Manage your account details and how you appear in the system.</p>
+      </div>
+    </div>
+
+    <div class="profile-head">
+      <div class="avatar">RP</div>
+      <div>
+        <h2 style="margin-bottom:4px;">Rica Pintac</h2>
+        <p class="sub" style="margin-bottom:8px;">Lost &amp; Found Staff Account</p>
+        <span class="stamp stamp-claimed">Status: Active</span>
+      </div>
+    </div>
+
+    <div class="grid-2" style="grid-template-columns: 1.3fr 1fr; align-items:start;">
+      <div class="form-card">
+        <div class="panel-head" style="margin-bottom:24px;">
+          <h2 style="font-size:19px;">Account details</h2>
+          <button id="profile-edit-btn" type="button" class="btn btn-ghost btn-sm" data-editing="false">Edit profile</button>
+        </div>
+
+        <div class="form-msg" id="profile-msg">Your profile changes have been saved (demo only — not connected to a database yet).</div>
+
+        <form id="profile-form">
+          <div class="field-row">
+            <div class="field">
+              <label for="pf-first">First name</label>
+              <input type="text" id="pf-first" value="Rica" disabled>
+            </div>
+            <div class="field">
+              <label for="pf-last">Last name</label>
+              <input type="text" id="pf-last" value="Pintac" disabled>
+            </div>
+          </div>
+          <div class="field">
+            <label for="pf-email">Email address</label>
+            <input type="email" id="pf-email" value="rica.pintac@university.edu" disabled>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="pf-role">Role</label>
+              <select id="pf-role" disabled>
+                <option selected>Lost &amp; Found Staff</option>
+                <option>System Admin</option>
+                <option>Student</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="pf-id">Staff / Student ID</label>
+              <input type="text" id="pf-id" value="STF-2026-0042" disabled>
+            </div>
+          </div>
+          <div class="field">
+            <label for="pf-contact">Contact number</label>
+            <input type="text" id="pf-contact" value="0917 000 0000" disabled>
+          </div>
+          <div class="field">
+            <label for="pf-dept">Department / Office</label>
+            <input type="text" id="pf-dept" value="Student Affairs — Lost &amp; Found Desk" disabled>
+          </div>
+          <button id="profile-save-btn" type="submit" class="btn btn-amber" style="display:none;width:100%;justify-content:center;">Save changes</button>
+        </form>
+      </div>
+
+      <div>
+        <div class="panel" style="margin-bottom:24px;">
+          <div class="panel-head">
+            <h2>Activity summary</h2>
+          </div>
+          <div class="stat-row" style="grid-template-columns:1fr 1fr;gap:14px;">
+            <div class="stat-box" style="padding:18px;">
+              <div class="num" style="font-size:24px;">86</div>
+              <div class="label">Items logged</div>
+            </div>
+            <div class="stat-box" style="padding:18px;">
+              <div class="num" style="font-size:24px;">53</div>
+              <div class="label">Claims verified</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-head">
+            <h2>Security</h2>
+          </div>
+          <div class="field">
+            <label>Password</label>
+            <input type="password" value="••••••••••" disabled>
+            <div class="hint">Password changes will be available once the system is connected to the database.</div>
+          </div>
+          <div class="checkbox-row" style="margin-top:6px;">
+            <input type="checkbox" id="pf-notify" checked disabled>
+            <label for="pf-notify" style="margin-bottom:0;font-weight:500;">Email me when a new claim needs verification</label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

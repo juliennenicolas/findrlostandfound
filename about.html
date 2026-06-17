@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Findr</title>
+<meta name="description" content="Background, mission, and objectives behind the Findr Lost and Found Management System.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">
+      <svg width="30" height="30" viewBox="0 0 30 30" fill="none">
+        <rect x="4" y="7" width="18" height="18" rx="4" transform="rotate(-8 4 7)" fill="#1B2A4A"/>
+        <circle cx="10.5" cy="11" r="2.4" fill="#F6F3EC"/>
+        <path d="M12 16l3 3 5-6" stroke="#E8A33D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span class="brand-name">Find<span>r</span></span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1B2A4A" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="features.html">Features</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li class="nav-dropdown">
+        <button class="nav-dropdown-btn">System Mockups
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="nav-dropdown-menu">
+          <a href="login.html"><span class="tag-dot"></span>Login Page</a>
+          <a href="register.html"><span class="tag-dot"></span>Registration Form</a>
+          <a href="dashboard.html"><span class="tag-dot"></span>Dashboard</a>
+          <a href="records.html"><span class="tag-dot"></span>Records Management</a>
+          <a href="reports.html"><span class="tag-dot"></span>Reports Page</a>
+          <a href="profile.html"><span class="tag-dot"></span>Profile Page</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" style="padding-bottom:10px;">
+  <div class="container">
+    <div class="eyebrow">About the project</div>
+    <h1 style="font-size:clamp(32px,4.4vw,46px);max-width:760px;">Built because the lost-and-found box at the front office wasn't working anymore.</h1>
+    <p class="hero-lede" style="max-width:640px;">Findr is the front-end prototype for our proposed database application — a capstone project by Group 5, submitted as the Web-Based Lost-and-Found Management System with Database Connectivity for Educational Institutions.</p>
+  </div>
+</header>
+
+<section class="section-tight">
+  <div class="container grid-2">
+    <div class="tag-card">
+      <div class="eyebrow">Background</div>
+      <h2 style="font-size:24px;">The problem we set out to solve</h2>
+      <p style="color:var(--ink-soft);font-size:15px;">Lost-and-found in most schools today is handled manually — paper logs, physical drop-off boxes, and word of mouth. This creates three recurring problems: items end up scattered across different offices with no centralized tracking, nothing is photographed or documented so matching an item to its owner becomes guesswork, and students are rarely notified when their belongings are found, so items sit unclaimed for weeks.</p>
+      <p style="color:var(--ink-soft);font-size:15px;margin-bottom:0;">Together, these gaps lead to low recovery rates, frustrated students, and extra workload for school staff who have to manage everything by hand.</p>
+    </div>
+    <div class="tag-card" style="background:var(--ink);border-color:var(--ink);">
+      <div class="eyebrow" style="color:var(--amber);">Edit this section</div>
+      <h2 style="font-size:24px;color:#fff;">Replace with your school's name</h2>
+      <p style="color:#B9C2D6;font-size:15px;margin-bottom:0;">This card is a placeholder — swap in your actual institution's name, department, and any organizational details your proposal needs. Everything on this page is plain HTML, so you can edit the text directly in <code style="background:rgba(255,255,255,0.12);padding:2px 6px;border-radius:4px;">about.html</code>.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section-tight" style="padding-top:0;">
+  <div class="container">
+    <div class="divider-soft"></div>
+    <div class="section-head">
+      <div class="eyebrow">Mission &amp; vision</div>
+      <h2>What we want this system to do</h2>
+    </div>
+    <div class="grid-2">
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1B2A4A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4.5L6 21l1.5-7.5L2 9h7z"/></svg>
+        </div>
+        <h3>Mission</h3>
+        <p>To give educational institutions a centralized, reliable, and easy-to-use platform for recording, searching, and recovering lost belongings — replacing manual logbooks with a single source of truth.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1B2A4A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+        </div>
+        <h3>Vision</h3>
+        <p>A campus where no lost item goes untracked — where students get notified the moment something is found, and staff spend less time on paperwork and more time helping people.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Purpose &amp; objectives</div>
+      <h2>Why this project exists</h2>
+      <p class="ink-soft">This activity serves as the front-end prototype of our final database application proposal.</p>
+    </div>
+    <div class="grid-3">
+      <div>
+        <div class="kicker-line"><span class="num">01</span></div>
+        <h3 style="color:#fff;font-size:18px;">Centralize records</h3>
+        <p style="color:#B9C2D6;font-size:14.5px;">Replace scattered logbooks with one MySQL-backed database covering users, items, categories, locations, claims, and reports.</p>
+      </div>
+      <div>
+        <div class="kicker-line"><span class="num">02</span></div>
+        <h3 style="color:#fff;font-size:18px;">Speed up recovery</h3>
+        <p style="color:#B9C2D6;font-size:14.5px;">Let students search by name, category, date, or location instead of checking every office in person.</p>
+      </div>
+      <div>
+        <div class="kicker-line"><span class="num">03</span></div>
+        <h3 style="color:#fff;font-size:18px;">Make claims accountable</h3>
+        <p style="color:#B9C2D6;font-size:14.5px;">Require proof descriptions and staff verification before any item is marked claimed, with a full audit trail.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-head center">
+      <div class="eyebrow" style="justify-content:center;">The team</div>
+      <h2>Group 5</h2>
+      <p>Edit the names and roles below to match your group.</p>
+    </div>
+    <div class="grid-3" style="grid-template-columns:repeat(4,1fr);">
+      <div class="feature-card" style="text-align:center;">
+        <div class="avatar" style="margin:0 auto 14px;width:56px;height:56px;font-size:18px;">T</div>
+        <h3 style="font-size:16px;">Torre</h3>
+        <p style="font-size:13.5px;">Introduction &amp; Database Design</p>
+      </div>
+      <div class="feature-card" style="text-align:center;">
+        <div class="avatar" style="margin:0 auto 14px;width:56px;height:56px;font-size:18px;">M</div>
+        <h3 style="font-size:16px;">Melchor</h3>
+        <p style="font-size:13.5px;">Problem &amp; Proposed Solution</p>
+      </div>
+      <div class="feature-card" style="text-align:center;">
+        <div class="avatar" style="margin:0 auto 14px;width:56px;height:56px;font-size:18px;">N</div>
+        <h3 style="font-size:16px;">Nicolas</h3>
+        <p style="font-size:13.5px;">Scope &amp; File Maintenance</p>
+      </div>
+      <div class="feature-card" style="text-align:center;">
+        <div class="avatar" style="margin:0 auto 14px;width:56px;height:56px;font-size:18px;">P</div>
+        <h3 style="font-size:16px;">Pintac</h3>
+        <p style="font-size:13.5px;">SQL Scripts &amp; Sample Data</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <svg width="26" height="26" viewBox="0 0 30 30" fill="none">
+            <rect x="4" y="7" width="18" height="18" rx="4" transform="rotate(-8 4 7)" fill="#E8A33D"/>
+            <circle cx="10.5" cy="11" r="2.4" fill="#1B2A4A"/>
+          </svg>
+          <span class="brand-name">Findr</span>
+        </div>
+        <p style="font-size:14px;max-width:260px;">A web-based Lost &amp; Found Management System with database connectivity, built for educational institutions.</p>
+        <div class="social-row">
+          <a href="#" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+          <a href="#" aria-label="X"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="4" x2="20" y2="20"/><line x1="20" y1="4" x2="4" y2="20"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>Navigate</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="features.html">Features</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <h4>System mockups</h4>
+        <a href="login.html">Login</a>
+        <a href="register.html">Registration</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="records.html">Records</a>
+        <a href="reports.html">Reports</a>
+        <a href="profile.html">Profile</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="mailto:group5.findr@university.edu">group5.findr@university.edu</a>
+        <a href="tel:+10000000000">Student Affairs Office</a>
+        <a href="contact.html">Send a message →</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Findr — Group 5 Capstone Project, [University Name].</span>
+      <span>Built with HTML, CSS &amp; JavaScript</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
